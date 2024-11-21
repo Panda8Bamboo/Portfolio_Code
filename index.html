@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-image" style="background-image: url('/assets/img/shen.jpg');"></div>
+        <div class="header-image" style="background-image: url('./assets/img/shen.jpg');"></div>
 
         <div class="header-content">
             <img src="assets/img/test.jpg" alt="Circular Image" class="header-image-circle">
@@ -23,8 +23,21 @@
     <main>
 
     </main>
-    <footer>
+    <footer class="footer">
+        <button
+                onclick="homeIconClick()"
+                class="footer-icon bg-transparent border-none p-2 focus:outline-none">
+            <img src="./assets/img/test.jpg" alt="Home Icon" class="w-[40px] h-[40px]">
+        </button>
+
+        <button
+                onclick="gridIconClick()"
+                class="footer-icon bg-transparent border-none p-2 focus:outline-none">
+            <img src="./assets/img/test.jpg" alt="Grid Icon" class="w-[40px] h-[40px]">
+        </button>
 
     </footer>
+    <script src="assets/js/main.js"></script>
 
 </body>
+</html>

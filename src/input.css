@@ -22,3 +22,7 @@
 .header-text {
     @apply absolute bottom-0 right-0 p-4 text-center w-[60%];
 }
+
+ .footer {
+    @apply fixed bottom-0 w-full h-[10vh] bg-cerulean-800 flex items-center justify-between px-4;
+}

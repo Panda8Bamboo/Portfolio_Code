@@ -558,6 +558,26 @@ video {
   margin-right: 1vw;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
+.w-\[40px\] {
+  width: 40px;
+}
+
+.border-none {
+  border-style: none;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
 .tracking-\[5px\] {
   letter-spacing: 5px;
 }
@@ -611,4 +631,23 @@ video {
   width: 60%;
   padding: 1rem;
   text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 70 101 / var(--tw-bg-opacity, 1));
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
