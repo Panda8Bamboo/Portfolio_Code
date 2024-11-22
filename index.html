@@ -21,26 +21,23 @@
 
     </header>
     <main>
-        <aside
-                id="navigationAside"
-                class="fixed bottom-0 w-[100vw] h-[30vh] bg-black shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
-
-            <nav class="mt-8 space-y-4">
-                <a href="#" class="block text-gray-700 hover:text-blue-500">Projects</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500">About</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500">Contact</a>
+        <aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
+            <nav class="flex flex-col items-center justify-start h-full space-y-[3vh] mt-[1vh]">
+                <a href="#" class="block text-white hover:text-emerald-400">Projects</a>
+                <a href="#" class="block text-white hover:text-emerald-400">About</a>
+                <a href="#" class="block text-white hover:text-emerald-400">Contact</a>
             </nav>
         </aside>
     </main>
     <footer class="footer">
         <button
-                onclick="homeIconClick()"
+                onclick="homeIconClick()" id="homeButton"
                 class="footer-icon bg-transparent border-none p-[5vw] ml-[5vw] focus:outline-none">
             <img src="./assets/img/home.svg" alt="Home Icon" class="w-[6vh] h-[6vh]">
         </button>
 
         <button
-                onclick="dashboardIconClick()"
+                onclick="dashboardIconClick()" id="dashboardButton"
                 class="footer-icon bg-transparent border-none p-[4vw] mr-[5vw] focus:outline-none">
             <img src="./assets/img/dashboard.png" alt="Dashboard Icon" class="w-[6vh] h-[6vh]">
         </button>
