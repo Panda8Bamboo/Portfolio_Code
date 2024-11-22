@@ -15,25 +15,34 @@
         </div>
 
         <div class="header-text mr-[1vw]">
-            <h1 class="font-italic tracking-[5px]">Amber Howe</h1>
+            <h1 class="font-italic tracking-[5px] text-[clamp(8px, 3vw, 20px]">Amber Howe</h1>
 
         </div>
 
     </header>
     <main>
+        <aside
+                id="navigationAside"
+                class="fixed bottom-0 w-[100vw] h-[30vh] bg-black shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
 
+            <nav class="mt-8 space-y-4">
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Projects</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">About</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Contact</a>
+            </nav>
+        </aside>
     </main>
     <footer class="footer">
         <button
                 onclick="homeIconClick()"
-                class="footer-icon bg-transparent border-none p-2 focus:outline-none">
-            <img src="./assets/img/test.jpg" alt="Home Icon" class="w-[40px] h-[40px]">
+                class="footer-icon bg-transparent border-none p-[5vw] ml-[5vw] focus:outline-none">
+            <img src="./assets/img/home.svg" alt="Home Icon" class="w-[6vh] h-[6vh]">
         </button>
 
         <button
-                onclick="gridIconClick()"
-                class="footer-icon bg-transparent border-none p-2 focus:outline-none">
-            <img src="./assets/img/test.jpg" alt="Grid Icon" class="w-[40px] h-[40px]">
+                onclick="dashboardIconClick()"
+                class="footer-icon bg-transparent border-none p-[4vw] mr-[5vw] focus:outline-none">
+            <img src="./assets/img/dashboard.png" alt="Dashboard Icon" class="w-[6vh] h-[6vh]">
         </button>
 
     </footer>

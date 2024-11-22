@@ -16,11 +16,11 @@
 }
 
 .header-image-circle {
-    @apply w-[60%] h-[60%] ml-[12vw] mt-[5vh] rounded-full object-cover border-4 border-white;
+    @apply w-[60%] h-[60%] max-h-[300px] max-w-[300px] min-h-[100px] min-w-[100px] ml-[12vw] mt-[5vh] rounded-full object-cover border-4 border-white;
 }
 
 .header-text {
-    @apply absolute bottom-0 right-0 p-4 text-center w-[60%];
+    @apply absolute bottom-0 right-0 top-[20vh] p-4 text-center w-[60%];
 }
 
  .footer {
