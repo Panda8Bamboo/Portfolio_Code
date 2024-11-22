@@ -40,6 +40,10 @@
     @apply flex justify-center pt-[15%] text-white tracking-[5px]
 }
 
+.text {
+    @apply text-white tracking-[5px]
+}
+
 .main {
     @apply container fixed top-[25vh] left-0 right-0 h-[65vh]
 }
