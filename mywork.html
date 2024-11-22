@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <title> Portfolio </title>
+</head>
+<body>
+<header class="header">
+    <div class="header-image" style="background-image: url('./assets/img/shen.jpg');"></div>
+
+    <div class="header-content">
+        <img src="assets/img/test.jpg" alt="Circular Image" class="header-image-circle">
+    </div>
+
+    <div class="header-text mr-[1vw]">
+        <h1 class="font-italic tracking-[5px] text-[clamp(8px, 3vw, 20px]">Amber Howe</h1>
+
+    </div>
+
+</header>
+<main>
+    <aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
+        <nav class="flex flex-col items-center justify-start h-full space-y-[3vh] mt-[1vh]">
+            <a href="#" class="block text-white hover:text-emerald-400" id="projectsLink">Projects</a>
+            <a href="#" class="block text-white hover:text-emerald-400" id="aboutLink">About</a>
+            <a href="#" class="block text-white hover:text-emerald-400" id="contactLink">Contact</a>
+        </nav>
+    </aside>
+</main>
+<footer class="footer">
+    <button
+            onclick="homeIconClick()" id="homeButton"
+            class="footer-icon bg-transparent border-none p-[5vw] ml-[5vw] focus:outline-none">
+        <img src="./assets/img/home.svg" alt="Home Icon" class="w-[6vh] h-[6vh]">
+    </button>
+
+    <button
+            onclick="dashboardIconClick()" id="dashboardButton"
+            class="footer-icon bg-transparent border-none p-[4vw] mr-[5vw] focus:outline-none">
+        <img src="./assets/img/dashboard.png" alt="Dashboard Icon" class="w-[6vh] h-[6vh]">
+    </button>
+
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
