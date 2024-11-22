@@ -22,28 +22,31 @@
     <main class="main bg-black">
         <!-- Top Image Section (40% of container height) -->
         <div class="h-[40%] bg-cover bg-center" style="background-image: url('./assets/img/shen.jpg');">
-            <!-- Image content or overlay text can go here if needed -->
         </div>
-        <!-- Bottom Grid Section (60% of container height) -->
+
         <div class="absolute top-[40%] left-0 right-0 bottom-0 grid grid-cols-2 grid-rows-2">
-            <!-- Grid Item 1 -->
             <div class="grid-item">
-                <div class="grid-text text-[clamp(8px, 3vw, 20px)]">PROJECTS</div>
+                <a href="projects.html">
+                    <div class="grid-text text-[clamp(8px, 3vw, 20px)]">PROJECTS</div>
+                </a>
                 <img src="assets/img/shen.jpg" alt="shen" class="background-image">
             </div>
-            <!-- Grid Item 2 -->
             <div class="grid-item">
-                <div class="grid-text text-[clamp(8px, 3vw, 20px)]">RESUME</div>
+                <a href="resume.html">
+                    <div class="grid-text text-[clamp(8px, 3vw, 20px)]">RESUME</div>
+                </a>
                 <img src="assets/img/test.jpg" alt="test" class="background-image">
             </div>
-            <!-- Grid Item 3 -->
             <div class="grid-item">
-                <div class="grid-text text-[clamp(8px, 3vw, 20px)]">CONTACT</div>
+                <a href="contact.html">
+                    <div class="grid-text text-[clamp(8px, 3vw, 20px)]">CONTACT</div>
+                </a>
                 <img src="assets/img/test.jpg" alt="shen" class="background-image">
             </div>
-            <!-- Grid Item 4 -->
             <div class="grid-item">
-                <div class="grid-text text-[clamp(8px, 3vw, 20px)]">ABOUT</div>
+                <a href="about.html">
+                    <div class="grid-text text-[clamp(8px, 3vw, 20px)]">ABOUT</div>
+                </a>
                 <img src="assets/img/shen.jpg" alt="shen" class="background-image">
             </div>
         </div>
@@ -52,19 +55,17 @@
 
     <aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
             <nav class="flex flex-col items-center justify-start h-[30vh] space-y-[1vh] mt-[0.1vh]">
-                <a href="#" class="block text-white hover:text-emerald-400" id="projectsLink">Projects</a>
-                <a href="#" class="block text-white hover:text-emerald-400" id="aboutLink">About</a>
-                <a href="#" class="block text-white hover:text-emerald-400" id="contactLink">Contact</a>
-                <a href="#" class="block text-white hover:text-emerald-400" id="resumeLink">Resume</a>
+                <a href="projects.html" class="block text-white hover:text-emerald-400">Projects</a>
+                <a href="about.html" class="block text-white hover:text-emerald-400">About</a>
+                <a href="contact.html" class="block text-white hover:text-emerald-400">Contact</a>
+                <a href="resume.html" class="block text-white hover:text-emerald-400">Resume</a>
             </nav>
         </aside>
     </main>
     <footer class="footer">
-        <button
-                onclick="homeIconClick()" id="homeButton"
-                class="footer-icon bg-transparent border-none p-[5vw] ml-[5vw] focus:outline-none">
+        <a href="index.html" id="homeButton" class="footer-icon bg-transparent border-none p-[5vw] ml-[5vw] focus:outline-none">
             <img src="./assets/img/home.svg" alt="Home Icon" class="w-[6vh] h-[6vh]">
-        </button>
+        </a>
 
         <button
                 onclick="dashboardIconClick()" id="dashboardButton"
