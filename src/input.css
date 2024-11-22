@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* header stuff */
 .header {
     @apply fixed w-full h-[25vh] bg-white text-black;
 }
@@ -15,18 +17,41 @@
 }
 
 .header-image-circle {
-    @apply w-[60%] h-[60%] max-h-[300px] max-w-[300px] min-h-[100px] min-w-[100px] ml-[12vw] mt-[5vh] rounded-full object-cover border-4 border-white;
+    @apply w-[60%] h-[60%] max-h-[30vh] max-w-[30vw] min-h-[100px] min-w-[100px] mt-[5vh] rounded-full object-cover border-4 border-white;
 }
 
 .header-text {
-    @apply absolute bottom-0 right-0 top-[20vh] p-4 text-center w-[60%];
+    @apply absolute bottom-0 right-0 top-[20vh] p-2 text-center w-[60%];
 }
+
+/* main stuff */
+
+.grid-item {
+    @apply relative bg-cover bg-center text-center h-full w-full flex items-center justify-center;;
+}
+
+.background-image {
+    @apply absolute w-full h-full object-cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.grid-text {
+    @apply flex justify-center pt-[15%] text-white tracking-[5px]
+}
+
+.main {
+    @apply container fixed top-[25vh] left-0 right-0 h-[65vh]
+}
+
+/* footer stuff */
 
 .footer {
     @apply fixed bottom-0 w-full h-[10vh] bg-cerulean-800 flex items-center justify-between px-4;
 }
 
-/* Currently not working. Find fix and change translation to y axis */
+/* aside stuff
+Currently not working. Find fix and change translation to y axis */
 .aside {
     @apply fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300;
 }

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectsLink = document.getElementById("projectsLink");
     const aboutLink = document.getElementById("aboutLink");
     const contactLink = document.getElementById("contactLink");
+    const resumeLink = document.getElementById("resumeLink");
 
     projectsLink.addEventListener("click", (event) => {
         event.preventDefault();
@@ -17,6 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     contactLink.addEventListener("click", (event) => {
         event.preventDefault();
         window.location.href = "contact.html";
+    });
+
+    contactLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = "resume.html";
     });
 
     function homeIconClick() {

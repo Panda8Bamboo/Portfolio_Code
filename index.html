@@ -14,18 +14,48 @@
             <img src="assets/img/test.jpg" alt="Circular Image" class="header-image-circle">
         </div>
 
-        <div class="header-text mr-[1vw]">
+        <div class="header-text">
             <h1 class="font-italic tracking-[5px] text-[clamp(8px, 3vw, 20px]">Amber Howe</h1>
-
         </div>
 
     </header>
-    <main>
-        <aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
-            <nav class="flex flex-col items-center justify-start h-full space-y-[3vh] mt-[1vh]">
+    <main class="main bg-black">
+        <!-- Top Image Section (40% of container height) -->
+        <div class="h-[40%] bg-cover bg-center" style="background-image: url('./assets/img/shen.jpg');">
+            <!-- Image content or overlay text can go here if needed -->
+        </div>
+        <!-- Bottom Grid Section (60% of container height) -->
+        <div class="absolute top-[40%] left-0 right-0 bottom-0 grid grid-cols-2 grid-rows-2">
+            <!-- Grid Item 1 -->
+            <div class="grid-item">
+                <div class="grid-text text-[clamp(8px, 3vw, 20px)]">PROJECTS</div>
+                <img src="assets/img/shen.jpg" alt="shen" class="background-image">
+            </div>
+            <!-- Grid Item 2 -->
+            <div class="grid-item">
+                <div class="grid-text text-[clamp(8px, 3vw, 20px)]">RESUME</div>
+                <img src="assets/img/test.jpg" alt="test" class="background-image">
+            </div>
+            <!-- Grid Item 3 -->
+            <div class="grid-item">
+                <div class="grid-text text-[clamp(8px, 3vw, 20px)]">CONTACT</div>
+                <img src="assets/img/test.jpg" alt="shen" class="background-image">
+            </div>
+            <!-- Grid Item 4 -->
+            <div class="grid-item">
+                <div class="grid-text text-[clamp(8px, 3vw, 20px)]">ABOUT</div>
+                <img src="assets/img/shen.jpg" alt="shen" class="background-image">
+            </div>
+        </div>
+    </main>
+
+
+    <aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
+            <nav class="flex flex-col items-center justify-start h-[30vh] space-y-[1vh] mt-[0.1vh]">
                 <a href="#" class="block text-white hover:text-emerald-400" id="projectsLink">Projects</a>
                 <a href="#" class="block text-white hover:text-emerald-400" id="aboutLink">About</a>
                 <a href="#" class="block text-white hover:text-emerald-400" id="contactLink">Contact</a>
+                <a href="#" class="block text-white hover:text-emerald-400" id="resumeLink">Resume</a>
             </nav>
         </aside>
     </main>
