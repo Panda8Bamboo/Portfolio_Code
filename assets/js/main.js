@@ -1,12 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
     const aside = document.getElementById("navigationAside");
+    const projectsLink = document.getElementById("projectsLink");
+    const aboutLink = document.getElementById("aboutLink");
+    const contactLink = document.getElementById("contactLink");
+
+    projectsLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = "projects.html";
+    });
+
+    aboutLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = "about.html";
+    });
+
+    contactLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = "contact.html";
+    });
 
     function homeIconClick() {
         window.location.href = 'index.html';
     }
 
     function dashboardIconClick() {
-        alert("Dashboard clicked");
         if (navigationAside.classList.contains("-translate-x-full")) {
             navigationAside.classList.remove("-translate-x-full");
             navigationAside.classList.add("translate-x-0");

@@ -606,12 +606,12 @@ video {
   margin-right: 5vw;
 }
 
-.mt-\[5vh\] {
-  margin-top: 5vh;
-}
-
 .mt-\[1vh\] {
   margin-top: 1vh;
+}
+
+.mt-\[5vh\] {
+  margin-top: 5vh;
 }
 
 .block {
@@ -624,10 +624,6 @@ video {
 
 .h-\[10vh\] {
   height: 10vh;
-}
-
-.h-\[20vh\] {
-  height: 20vh;
 }
 
 .h-\[25vh\] {
@@ -696,21 +692,12 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-\[20vh\] {
-  --tw-translate-y: 20vh;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col {
   flex-direction: column;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-center {
@@ -721,30 +708,8 @@ video {
   justify-content: flex-start;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
-}
-
-.space-y-\[10vh\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(10vh * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(10vh * var(--tw-space-y-reverse));
-}
-
-.space-y-\[6vh\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(6vh * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(6vh * var(--tw-space-y-reverse));
-}
-
-.space-y-\[4vh\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(4vh * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(4vh * var(--tw-space-y-reverse));
 }
 
 .space-y-\[3vh\] > :not([hidden]) ~ :not([hidden]) {
@@ -763,11 +728,6 @@ video {
 
 .border-none {
   border-style: none;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-cerulean-800 {
@@ -908,12 +868,14 @@ video {
   padding-right: 1rem;
 }
 
+/* Currently not working. Find fix and change translation to y axis */
+
 .aside {
   position: fixed;
   bottom: 0px;
-  height: 20vh;
+  height: 30vh;
   width: 100vw;
-  --tw-translate-y: 20vh;
+  --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
   background-color: rgb(0 70 101 / var(--tw-bg-opacity, 1));

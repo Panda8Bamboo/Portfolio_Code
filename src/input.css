@@ -26,6 +26,7 @@
     @apply fixed bottom-0 w-full h-[10vh] bg-cerulean-800 flex items-center justify-between px-4;
 }
 
+/* Currently not working. Find fix and change translation to y axis */
 .aside {
     @apply fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300;
 }
