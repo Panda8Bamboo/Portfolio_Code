@@ -19,11 +19,12 @@
         </div>
 
     </header>
-    <main class="main bg-black">
-        <div class="h-[40%] bg-cover bg-center" style="background-image: url('./assets/img/shen.jpg');">
+    <main class="main grid">
+        <!-- First row -->
+        <div class="h-[100%] bg-cover bg-center lg:hidden lg:h-0" style="background-image: url('./assets/img/shen.jpg');">
         </div>
-
-        <div class="absolute top-[40%] left-0 right-0 bottom-0 grid grid-cols-2 grid-rows-2">
+        <!-- Second row -->
+        <div class="grid grid-cols-2 grid-rows-2">
             <div class="grid-item">
                 <a href="projects.html">
                     <div class="grid-text text-[clamp(8px, 3vw, 20px)]">PROJECTS</div>
@@ -50,6 +51,7 @@
             </div>
         </div>
     </main>
+
 
 
     <aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">

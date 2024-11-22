@@ -628,10 +628,6 @@ video {
   top: 25vh;
 }
 
-.top-\[40\%\] {
-  top: 40%;
-}
-
 .top-\[50\%\] {
   top: 50%;
 }
@@ -656,20 +652,20 @@ video {
   margin-top: 10px;
 }
 
-.mt-\[4px\] {
-  margin-top: 4px;
+.mt-\[20vh\] {
+  margin-top: 20vh;
 }
 
-.mt-\[50\%\] {
-  margin-top: 50%;
+.mt-\[4px\] {
+  margin-top: 4px;
 }
 
 .mt-\[5vh\] {
   margin-top: 5vh;
 }
 
-.mt-\[20vh\] {
-  margin-top: 20vh;
+.mt-\[25vh\] {
+  margin-top: 25vh;
 }
 
 .block {
@@ -732,6 +728,10 @@ video {
   height: 100vh;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .max-h-\[30vh\] {
   max-height: 30vh;
 }
@@ -764,16 +764,16 @@ video {
   width: 75%;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
 .w-\[100vw\] {
   width: 100vw;
 }
 
-.w-\[150px\] {
-  width: 150px;
+.w-\[30vw\] {
+  width: 30vw;
+}
+
+.w-\[40vw\] {
+  width: 40vw;
 }
 
 .w-\[50px\] {
@@ -790,22 +790,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[10vw\] {
-  width: 10vw;
-}
-
-.w-\[15vw\] {
-  width: 15vw;
-}
-
-.w-\[30vw\] {
-  width: 30vw;
-}
-
-.w-\[40vw\] {
-  width: 40vw;
 }
 
 .min-w-\[100px\] {
@@ -1173,6 +1157,8 @@ video {
   left: 0px;
   right: 0px;
   height: 65vh;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 70 101 / var(--tw-bg-opacity, 1));
 }
 
 /* footer stuff */
@@ -1225,5 +1211,15 @@ Currently not working. Find fix and change translation to y axis */
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:h-0 {
+    height: 0px;
+  }
 }
 
