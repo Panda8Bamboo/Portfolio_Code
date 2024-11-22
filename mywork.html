@@ -14,27 +14,29 @@
         <img src="assets/img/test.jpg" alt="Circular Image" class="header-image-circle">
     </div>
 
-    <div class="header-text mr-[1vw]">
+    <div class="header-text">
         <h1 class="font-italic tracking-[5px] text-[clamp(8px, 3vw, 20px]">Amber Howe</h1>
-
     </div>
 
 </header>
-<main>
-    <aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
-        <nav class="flex flex-col items-center justify-start h-full space-y-[3vh] mt-[1vh]">
-            <a href="#" class="block text-white hover:text-emerald-400" id="projectsLink">Projects</a>
-            <a href="#" class="block text-white hover:text-emerald-400" id="aboutLink">About</a>
-            <a href="#" class="block text-white hover:text-emerald-400" id="contactLink">Contact</a>
-        </nav>
-    </aside>
+<main class="main bg-black">
+
+</main>
+
+
+<aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
+    <nav class="flex flex-col items-center justify-start h-[30vh] space-y-[1vh] mt-[0.1vh]">
+        <a href="projects.html" class="block text-white hover:text-emerald-400">Projects</a>
+        <a href="about.html" class="block text-white hover:text-emerald-400">About</a>
+        <a href="contact.html" class="block text-white hover:text-emerald-400">Contact</a>
+        <a href="resume.html" class="block text-white hover:text-emerald-400">Resume</a>
+    </nav>
+</aside>
 </main>
 <footer class="footer">
-    <button
-            onclick="homeIconClick()" id="homeButton"
-            class="footer-icon bg-transparent border-none p-[5vw] ml-[5vw] focus:outline-none">
+    <a href="index.html" id="homeButton" class="footer-icon bg-transparent border-none p-[5vw] ml-[5vw] focus:outline-none">
         <img src="./assets/img/home.svg" alt="Home Icon" class="w-[6vh] h-[6vh]">
-    </button>
+    </a>
 
     <button
             onclick="dashboardIconClick()" id="dashboardButton"
