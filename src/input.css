@@ -45,7 +45,7 @@
 }
 
 .main {
-    @apply container fixed top-[25vh] left-0 right-0 h-[65vh] bg-cerulean-800
+    @apply container fixed top-[25vh] left-0 right-0 h-[65vh]
 }
 
 /* footer stuff */
