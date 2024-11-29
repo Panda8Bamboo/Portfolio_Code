@@ -1,0 +1,25 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - limitless-hosting # Change this to the branch you want to monitor
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Deploy via FTP
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_HOST }}         # Your FTP server
+          username: ${{ secrets.FTP_USERNAME }}   # Your FTP username
+          password: ${{ secrets.FTP_PASSWORD }}   # Your FTP password
+          local-dir: ./                           # The local directory to upload (current repo root)
+          server-dir: ${{ secrets.FTP_REMOTE_PATH }} # Remote directory
