@@ -6,6 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        slide: 'slide 15s linear infinite',
+      },
       colors: {
         cerulean: {
           400: '#006F91',

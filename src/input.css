@@ -21,7 +21,7 @@
 }
 
 .header-text {
-    @apply absolute text-white bottom-0 right-0 top-[20vh] p-2 text-center w-[60%];
+    @apply absolute overflow-hidden text-white bottom-0 right-0 top-[20vh] p-2 text-center w-[60%];
 }
 
 /* main stuff */
