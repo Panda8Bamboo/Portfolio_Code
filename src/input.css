@@ -44,6 +44,13 @@
     @apply text-white tracking-[5px]
 }
 
+/* NOT SURE WHY THIS DOESN'T WORK */
+.p-text {
+    padding: 2vw;
+    font-size: clamp(8px, 2vw, 15px);
+    color: white;
+}
+
 .main {
     @apply container fixed top-[25vh] left-0 right-0 h-[65vh]
 }
