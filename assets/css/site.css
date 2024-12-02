@@ -636,16 +636,16 @@ video {
   z-index: 10;
 }
 
+.m-\[2vw\] {
+  margin: 2vw;
+}
+
 .ml-\[2vw\] {
   margin-left: 2vw;
 }
 
 .ml-\[5vw\] {
   margin-left: 5vw;
-}
-
-.mr-\[3vw\] {
-  margin-right: 3vw;
 }
 
 .mr-\[5vw\] {
@@ -678,6 +678,10 @@ video {
 
 .mt-\[5vh\] {
   margin-top: 5vh;
+}
+
+.mr-\[2vw\] {
+  margin-right: 2vw;
 }
 
 .block {
