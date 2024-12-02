@@ -31,7 +31,7 @@
 }
 
 .background-image {
-    @apply absolute w-full h-full object-cover;
+    @apply absolute w-[100%] h-[100%] object-cover;
     opacity: 0.5;
     z-index: -1;
 }
@@ -73,7 +73,7 @@
 }
 
 .main {
-    @apply container h-[65vh] md:!h-[75vh] fixed top-[25vh] left-0 right-0
+    @apply bg-cyan-950 h-[65vh] md:!h-[75vh] fixed w-screen top-[25vh] left-0 right-0
 
 }
 
