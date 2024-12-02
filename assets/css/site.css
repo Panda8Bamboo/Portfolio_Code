@@ -984,9 +984,34 @@ video {
      object-fit: cover;
 }
 
-.object-top {
-  -o-object-position: top;
-     object-position: top;
+.object-\[center_10\%\] {
+  -o-object-position: center 10%;
+     object-position: center 10%;
+}
+
+.object-\[center_20\%\] {
+  -o-object-position: center 20%;
+     object-position: center 20%;
+}
+
+.object-\[center_35\%\] {
+  -o-object-position: center 35%;
+     object-position: center 35%;
+}
+
+.object-\[center_75\%\] {
+  -o-object-position: center 75%;
+     object-position: center 75%;
+}
+
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-2 {
