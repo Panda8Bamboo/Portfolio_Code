@@ -51,6 +51,7 @@
     color: white;
 }
 
+
 .resume-grid-heading {
     @apply flex items-start justify-center tracking-[5px] p-[1%]
 }
