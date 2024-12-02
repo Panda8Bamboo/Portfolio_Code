@@ -636,10 +636,6 @@ video {
   z-index: 10;
 }
 
-.m-\[2vw\] {
-  margin: 2vw;
-}
-
 .ml-\[2vw\] {
   margin-left: 2vw;
 }
@@ -648,12 +644,12 @@ video {
   margin-left: 5vw;
 }
 
-.mr-\[5vw\] {
-  margin-right: 5vw;
+.mr-\[2vw\] {
+  margin-right: 2vw;
 }
 
-.mt-\[0\.1vh\] {
-  margin-top: 0.1vh;
+.mr-\[5vw\] {
+  margin-right: 5vw;
 }
 
 .mt-\[0\.2vh\] {
@@ -678,10 +674,6 @@ video {
 
 .mt-\[5vh\] {
   margin-top: 5vh;
-}
-
-.mr-\[2vw\] {
-  margin-right: 2vw;
 }
 
 .block {
@@ -750,6 +742,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.\!h-\[75vh\] {
+  height: 75vh !important;
 }
 
 .max-h-\[30vh\] {
@@ -874,12 +870,20 @@ video {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1171,7 +1175,6 @@ video {
   top: 20vh;
   width: 60%;
   overflow: hidden;
-  padding: 0.5rem;
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -1299,6 +1302,12 @@ video {
   height: 65vh;
 }
 
+@media (min-width: 768px) {
+  .main {
+    height: 75vh !important;
+  }
+}
+
 /* footer stuff */
 
 .footer {
@@ -1386,13 +1395,31 @@ Currently not working. Find fix and change translation to y axis */
   outline-offset: 2px;
 }
 
+@media (min-width: 640px) {
+  .sm\:items-end {
+    align-items: flex-end;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:\!h-\[75vh\] {
+    height: 75vh !important;
+  }
+
+  .md\:h-0 {
+    height: 0px;
   }
 
   .md\:grid-cols-2 {
@@ -1405,6 +1432,10 @@ Currently not working. Find fix and change translation to y axis */
 
   .md\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 }
 

@@ -21,7 +21,7 @@
 }
 
 .header-text {
-    @apply absolute overflow-hidden text-white bottom-0 right-0 top-[20vh] p-2 text-center w-[60%];
+    @apply absolute overflow-hidden text-white bottom-0 right-0 top-[20vh] text-center w-[60%];
 }
 
 /* main stuff */
@@ -73,7 +73,8 @@
 }
 
 .main {
-    @apply container fixed top-[25vh] left-0 right-0 h-[65vh]
+    @apply container h-[65vh] md:!h-[75vh] fixed top-[25vh] left-0 right-0
+
 }
 
 /* footer stuff */
