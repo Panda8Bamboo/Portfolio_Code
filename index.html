@@ -57,7 +57,7 @@
     </main>
 
     <aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
-        <nav class="flex flex-col items-center justify-start h-[30vh] space-y-[1vh] mt-[0.1vh]">
+        <nav class="flex flex-col items-center justify-start h-[30vh] space-y-[1vh] mt-[0.2vh]">
             <a href="projects.html" class="block text-white hover:text-pink-400">Projects</a>
             <a href="about.html" class="block text-white hover:text-pink-400">About</a>
             <a href="contact.html" class="block text-white hover:text-pink-400">Contact</a>
@@ -65,18 +65,32 @@
         </nav>
     </aside>
 
-    <footer class="footer">
+    <footer class="footer md:hidden">
         <a href="index.html" id="homeButton" class="footer-icon bg-transparent border-none p-[5vw] ml-[5vw] focus:outline-none">
             <img src="./assets/img/home.svg" alt="Home Icon" class="w-[6vh] h-[6vh]">
         </a>
-
-        <button
-                id="dashboardButton"
-                class="footer-icon bg-transparent border-none p-[4vw] mr-[5vw] focus:outline-none">
+        <button id="dashboardButton" class="footer-icon bg-transparent border-none p-[4vw] mr-[5vw] focus:outline-none">
             <img src="./assets/img/dashboard.png" alt="Dashboard Icon" class="w-[6vh] h-[6vh]">
         </button>
-
     </footer>
+    <footer class="hidden md:block fixed bottom-0 w-full h-[10vh] bg-cyan-950">
+        <div class="flex flex-row w-full h-[10vh]">
+            <div class="w-full p-2">
+
+            </div>
+            <p class="w-full p-2"></p>
+            <div class="w-full p-2 flex items-center mr-[3vw]">
+                <nav class="flex flex-row justify-between w-full">
+                    <a href="index.html" class="block text-white hover:text-pink-400">Home</a>
+                    <a href="projects.html" class="block text-white hover:text-pink-400">Projects</a>
+                    <a href="about.html" class="block text-white hover:text-pink-400">About</a>
+                    <a href="contact.html" class="block text-white hover:text-pink-400">Contact</a>
+                    <a href="resume.html" class="block text-white hover:text-pink-400">Resume</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
     <script src="assets/js/main.js"></script>
 
 </body>
