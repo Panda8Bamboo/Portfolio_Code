@@ -51,6 +51,26 @@
     color: white;
 }
 
+.resume-grid-heading {
+    @apply flex items-start justify-center tracking-[5px] p-[1%]
+}
+
+.resume-grid-date {
+    @apply text-white pt-[1vh] ml-[2vw]
+}
+
+.resume-grid-title {
+    @apply p-[1vh] ml-[2vw]
+}
+
+.resume-grid-summary {
+    @apply text-white ml-[2vw]
+}
+
+.resume-grid-hidden {
+    @apply text-white p-[1vh] ml-[2vw]
+}
+
 .main {
     @apply container fixed top-[25vh] left-0 right-0 h-[65vh]
 }
