@@ -3,9 +3,13 @@ module.exports = {
   content: [
     './*.html',
     './src/*.css',
+    './assets/html/*.html',
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'pink-glow': '0 0 10px #db2777, 0 0 20px #db2777',
+      },
       keyframes: {
         slide: {
           '0%': { transform: 'translateX(100%)' },
@@ -41,12 +45,18 @@ module.exports = {
         400: '#f472b6',
         300: '#f9a8d4'
         },
+        shenPink: '#9d1d50',
+        pinks : {
+        400: '#f9256d',
+        200: '#9c3993'
+        },
+
         purple : {
         400: '#e879f9',
         500: '#d946ef'
         },
-      blue : {
-        950: '#172554',
+        blue : {
+        950: '#191a2f',
         900: '#1e3a8a',
         800: '#1e40af',
         700: '#1d4ed8'

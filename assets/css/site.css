@@ -554,40 +554,6 @@ video {
   display: none;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -620,6 +586,10 @@ video {
   top: 0px;
 }
 
+.top-\[100vh\] {
+  top: 100vh;
+}
+
 .top-\[20vh\] {
   top: 20vh;
 }
@@ -636,10 +606,6 @@ video {
   z-index: 10;
 }
 
-.m-\[2vw\] {
-  margin: 2vw;
-}
-
 .ml-\[2vw\] {
   margin-left: 2vw;
 }
@@ -648,12 +614,12 @@ video {
   margin-left: 5vw;
 }
 
-.mr-\[5vw\] {
-  margin-right: 5vw;
+.mr-\[2vw\] {
+  margin-right: 2vw;
 }
 
-.mt-\[0\.1vh\] {
-  margin-top: 0.1vh;
+.mr-\[5vw\] {
+  margin-right: 5vw;
 }
 
 .mt-\[0\.2vh\] {
@@ -680,8 +646,8 @@ video {
   margin-top: 5vh;
 }
 
-.mr-\[2vw\] {
-  margin-right: 2vw;
+.mr-\[3vw\] {
+  margin-right: 3vw;
 }
 
 .block {
@@ -700,6 +666,10 @@ video {
   display: none;
 }
 
+.\!h-\[75vh\] {
+  height: 75vh !important;
+}
+
 .h-\[100\%\] {
   height: 100%;
 }
@@ -712,16 +682,32 @@ video {
   height: 20%;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
 .h-\[25vh\] {
   height: 25vh;
+}
+
+.h-\[27px\] {
+  height: 27px;
 }
 
 .h-\[30vh\] {
   height: 30vh;
 }
 
+.h-\[4vh\] {
+  height: 4vh;
+}
+
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-\[5vh\] {
+  height: 5vh;
 }
 
 .h-\[60\%\] {
@@ -752,8 +738,20 @@ video {
   height: 100vh;
 }
 
+.max-h-\[30px\] {
+  max-height: 30px;
+}
+
 .max-h-\[30vh\] {
   max-height: 30vh;
+}
+
+.max-h-\[40px\] {
+  max-height: 40px;
+}
+
+.max-h-\[37px\] {
+  max-height: 37px;
 }
 
 .min-h-\[10\%\] {
@@ -762,6 +760,10 @@ video {
 
 .min-h-\[100px\] {
   min-height: 100px;
+}
+
+.min-h-\[25px\] {
+  min-height: 25px;
 }
 
 .min-h-\[30\%\] {
@@ -776,6 +778,14 @@ video {
   min-height: 50%;
 }
 
+.min-h-\[70\%\] {
+  min-height: 70%;
+}
+
+.\!w-\[100\%\] {
+  width: 100% !important;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -784,8 +794,28 @@ video {
   width: 75%;
 }
 
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .w-\[100vw\] {
   width: 100vw;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[20vw\] {
+  width: 20vw;
+}
+
+.w-\[25vw\] {
+  width: 25vw;
+}
+
+.w-\[27px\] {
+  width: 27px;
 }
 
 .w-\[30vw\] {
@@ -812,6 +842,10 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -826,10 +860,6 @@ video {
 
 .flex-shrink-0 {
   flex-shrink: 0;
-}
-
-.grow {
-  flex-grow: 1;
 }
 
 .-translate-x-full {
@@ -986,9 +1016,34 @@ video {
      object-fit: cover;
 }
 
-.object-top {
-  -o-object-position: top;
-     object-position: top;
+.object-\[center_10\%\] {
+  -o-object-position: center 10%;
+     object-position: center 10%;
+}
+
+.object-\[center_20\%\] {
+  -o-object-position: center 20%;
+     object-position: center 20%;
+}
+
+.object-\[center_35\%\] {
+  -o-object-position: center 35%;
+     object-position: center 35%;
+}
+
+.object-\[center_75\%\] {
+  -o-object-position: center 75%;
+     object-position: center 75%;
+}
+
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-2 {
@@ -1017,6 +1072,11 @@ video {
 
 .p-\[5vw\] {
   padding: 5vw;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6 {
@@ -1069,10 +1129,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .opacity-50 {
   opacity: 0.5;
 }
@@ -1091,14 +1147,17 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition-opacity {
-  transition-property: opacity;
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1113,14 +1172,15 @@ video {
   transition-duration: 300ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
+html, body {
+  min-height: 100vh;
 }
 
 /* header stuff */
 
 .header {
   position: fixed;
+  z-index: 10;
   height: 25vh;
   width: 100%;
   --tw-bg-opacity: 1;
@@ -1171,13 +1231,21 @@ video {
   top: 20vh;
   width: 60%;
   overflow: hidden;
-  padding: 0.5rem;
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 /* main stuff */
+
+/*
+.glow-effect {
+    filter: drop-shadow(0 0 10px #db2777)
+        drop-shadow(0 0 10px #db2777)
+        drop-shadow(0 0 20px #db2777)
+        drop-shadow(0 0 30px #db2777)
+        drop-shadow(0 0 40px #db2777);
+} */
 
 .grid-item {
   position: relative;
@@ -1258,45 +1326,34 @@ video {
 }
 
 .main {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .main {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .main {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .main {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .main {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .main {
-    max-width: 1536px;
-  }
-}
-
-.main {
   position: fixed;
   top: 25vh;
   left: 0px;
   right: 0px;
   height: 65vh;
+  width: 100vw;
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 51 68 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: 75vh;
+  }
+}
+
+/* RESUME PAGE */
+
+#header::after {
+  content: "|";
+  display: inline-block;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 /* footer stuff */
@@ -1311,6 +1368,15 @@ video {
   justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(8 51 68 / var(--tw-bg-opacity, 1));
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer-large {
+  position: relative;
+  top: 100vh;
+  height: 10vh;
+  width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -1336,11 +1402,6 @@ Currently not working. Find fix and change translation to y axis */
   transition-duration: 300ms;
 }
 
-.hover\:bg-cyan-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-emerald-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(52 211 153 / var(--tw-bg-opacity, 1));
@@ -1349,6 +1410,11 @@ Currently not working. Find fix and change translation to y axis */
 .hover\:bg-pink-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 114 182 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-pink-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-purple-400:hover {
@@ -1376,6 +1442,11 @@ Currently not working. Find fix and change translation to y axis */
   color: rgb(244 114 182 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-pink-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-purple-400:hover {
   --tw-text-opacity: 1;
   color: rgb(192 132 252 / var(--tw-text-opacity, 1));
@@ -1387,12 +1458,24 @@ Currently not working. Find fix and change translation to y axis */
 }
 
 @media (min-width: 768px) {
+  .md\:mr-\[7vw\] {
+    margin-right: 7vw;
+  }
+
   .md\:block {
     display: block;
   }
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-0 {
+    height: 0px;
+  }
+
+  .md\:h-\[75vh\] {
+    height: 75vh;
   }
 
   .md\:grid-cols-2 {
@@ -1409,12 +1492,16 @@ Currently not working. Find fix and change translation to y axis */
 }
 
 @media (min-width: 1024px) {
-  .lg\:hidden {
-    display: none;
+  .lg\:mr-\[7vw\] {
+    margin-right: 7vw;
   }
 
-  .lg\:h-0 {
-    height: 0px;
+  .lg\:mr-\[3vw\] {
+    margin-right: 3vw;
+  }
+
+  .lg\:block {
+    display: block;
   }
 }
 

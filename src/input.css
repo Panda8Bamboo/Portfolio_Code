@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    @apply min-h-screen;
+}
 
 /* header stuff */
 .header {
-    @apply fixed w-full h-[25vh] bg-cyan-950 text-white;
+    @apply fixed w-full h-[25vh] bg-cyan-950 text-white z-10;
 }
 
 .header-image {
@@ -21,17 +24,26 @@
 }
 
 .header-text {
-    @apply absolute overflow-hidden text-white bottom-0 right-0 top-[20vh] p-2 text-center w-[60%];
+    @apply absolute overflow-hidden text-white bottom-0 right-0 top-[20vh] text-center w-[60%];
 }
 
 /* main stuff */
 
+/*
+.glow-effect {
+    filter: drop-shadow(0 0 10px #db2777)
+        drop-shadow(0 0 10px #db2777)
+        drop-shadow(0 0 20px #db2777)
+        drop-shadow(0 0 30px #db2777)
+        drop-shadow(0 0 40px #db2777);
+} */
+
 .grid-item {
-    @apply relative bg-cover bg-center text-center h-full w-full flex items-center justify-center;;
+    @apply relative bg-cover bg-center text-center h-full w-full flex items-center justify-center;
 }
 
 .background-image {
-    @apply absolute w-full h-full object-cover;
+    @apply absolute w-[100%] h-[100%] object-cover;
     opacity: 0.5;
     z-index: -1;
 }
@@ -73,13 +85,33 @@
 }
 
 .main {
-    @apply container fixed top-[25vh] left-0 right-0 h-[65vh]
+    @apply fixed bg-cyan-950 h-[65vh] md:h-[75vh] w-screen top-[25vh] left-0 right-0
+
 }
+
+/* RESUME PAGE */
+#header::after {
+  content: "|";
+  display: inline-block;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
 
 /* footer stuff */
 
 .footer {
     @apply fixed bottom-0 w-full h-[10vh] bg-cyan-950 flex items-center justify-between px-4;
+}
+
+.footer-large {
+    @apply relative w-full h-[10vh] px-4 top-[100vh];
 }
 
 /* aside stuff

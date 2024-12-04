@@ -7,22 +7,11 @@
     <title> Portfolio </title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-image" style="background-image: url('./assets/img/shen.jpg');"></div>
-
-        <div class="header-content">
-            <img src="assets/img/test.jpg" alt="Circular Image" class="header-image-circle">
-        </div>
-
-        <div class="header-text">
-            <h1 id="flashing-text" class="font-italic tracking-[5px] text-[clamp(8px, 3vw, 20px] transition-opacity duration-500 opacity-0"> Amber Howe </h1>
-        </div>
-
-    </header>
-    <main class="main grid bg-cerulean-800">
-        <div class="h-[100%] bg-cover bg-center lg:hidden opacity-80 lg:h-0 relative">
+<div id="header"></div>
+    <main class="main !h-[75vh] grid bg-cerulean-800">
+        <div class="bg-cover bg-center md:hidden opacity-80 md:h-0 relative">
             <!-- <p class="relative flex justify-center h-full text-white text-[clamp(8px, 2vw, 15px] z-10"> 2D artist and programmer </p> -->
-            <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+            <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover object-bottom">
                 <source src="./assets/media/pixels.mp4" type="video/mp4">
                 <img src="./assets/img/pixels.png" alt="Fallback Background" class="w-full h-full object-cover">
             </video>
@@ -33,63 +22,32 @@
                 <a href="projects.html">
                     <div class="grid-text hover:text-cyan-400 text-[clamp(8px, 3vw, 20px)]">PROJECTS</div>
                 </a>
-                <img src="assets/img/tether.jpg" alt="tether" class="background-image" style="object-position: center 10%;">
+                <img src="assets/img/tether.jpg" alt="tether" class="background-image object-[center_10%]">
             </div>
+
             <div class="grid-item">
                 <a href="resume.html">
                     <div class="grid-text hover:text-purple-400 text-[clamp(8px, 3vw, 20px)]">RESUME</div>
                 </a>
-                <img src="assets/img/wizard.png" alt="wizard" class="background-image object-top" style="object-position: center 20%;">
+                <img src="assets/img/wizard.png" alt="wizard" class="background-image object-[center_20%]">
             </div>
+
             <div class="grid-item">
-                <a href="contact.html">
-                    <div class="grid-text hover:text-pink-400 text-[clamp(8px, 3vw, 20px)]">CONTACT</div>
+                <a href="commissions.html">
+                    <div class="grid-text hover:text-pink-400 text-[clamp(8px, 3vw, 20px)]">COMMISSIONS</div>
                 </a>
-                <img src="assets/img/fanart.jpg" alt="regice pokemon" class="background-image" style="object-position: center 75%;">
+                <img src="assets/img/fanart.jpg" alt="regice pokemon" class="background-image object-center object-[center_75%]">
             </div>
+
             <div class="grid-item">
                 <a href="about.html">
                     <div class="grid-text hover:text-emerald-400 text-[clamp(8px, 3vw, 20px)]">ABOUT</div>
                 </a>
-                <img src="assets/img/witch.jpg" alt="witch" class="background-image" style="object-position: center 35%;">
+                <img src="assets/img/witch.jpg" alt="witch" class="background-image object-center object-[center_35%]">
             </div>
         </div>
     </main>
-
-    <aside id="navigationAside" class="fixed bottom-0 w-[100vw] h-[30vh] bg-cerulean-800 shadow-lg opacity-75 transform -translate-x-full transition-transform duration-300">
-        <nav class="flex flex-col items-center justify-start h-[30vh] space-y-[1vh] mt-[0.2vh]">
-            <a href="projects.html" class="block text-white hover:text-pink-400">Projects</a>
-            <a href="about.html" class="block text-white hover:text-pink-400">About</a>
-            <a href="contact.html" class="block text-white hover:text-pink-400">Contact</a>
-            <a href="resume.html" class="block text-white hover:text-pink-400">Resume</a>
-        </nav>
-    </aside>
-
-    <footer class="footer md:hidden">
-        <a href="index.html" id="homeButton" class="footer-icon bg-transparent border-none p-[5vw] ml-[5vw] focus:outline-none">
-            <img src="./assets/img/home.svg" alt="Home Icon" class="w-[6vh] h-[6vh]">
-        </a>
-        <button id="dashboardButton" class="footer-icon bg-transparent border-none p-[4vw] mr-[5vw] focus:outline-none">
-            <img src="./assets/img/dashboard.png" alt="Dashboard Icon" class="w-[6vh] h-[6vh]">
-        </button>
-    </footer>
-    <footer class="hidden md:block fixed bottom-0 w-full h-[10vh] bg-cyan-950">
-        <div class="flex flex-row w-full h-[10vh]">
-            <div class="w-full p-2">
-            </div>
-            <p class="w-full p-2"></p>
-            <div class="w-full p-2 flex items-center">
-                <nav class="flex flex-row justify-between w-full">
-                    <a href="index.html" class="block text-white hover:text-pink-400">Home</a>
-                    <a href="projects.html" class="block text-white hover:text-pink-400 ml-[2vw]">Projects</a>
-                    <a href="about.html" class="block text-white hover:text-pink-400 ml-[2vw]">About</a>
-                    <a href="contact.html" class="block text-white hover:text-pink-400 ml-[2vw]">Contact</a>
-                    <a href="resume.html" class="block text-white hover:text-pink-400 ml-[2vw] mr-[2vw]">Resume</a>
-                </nav>
-            </div>
-        </div>
-    </footer>
-
+<div id="footer" class="hidden"></div>
     <script src="assets/js/main.js"></script>
 
 </body>
