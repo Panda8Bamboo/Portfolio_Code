@@ -646,6 +646,10 @@ video {
   margin-top: 5vh;
 }
 
+.mr-\[10vw\] {
+  margin-right: 10vw;
+}
+
 .block {
   display: block;
 }
@@ -814,6 +818,10 @@ video {
   width: 100vw;
 }
 
+.w-\[35vw\] {
+  width: 35vw;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -828,10 +836,6 @@ video {
 
 .flex-shrink-0 {
   flex-shrink: 0;
-}
-
-.grow {
-  flex-grow: 1;
 }
 
 .-translate-x-full {
@@ -1374,11 +1378,6 @@ Currently not working. Find fix and change translation to y axis */
   transition-duration: 300ms;
 }
 
-.hover\:bg-cyan-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-emerald-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(52 211 153 / var(--tw-bg-opacity, 1));
@@ -1389,6 +1388,11 @@ Currently not working. Find fix and change translation to y axis */
   background-color: rgb(244 114 182 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-pink-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-purple-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(192 132 252 / var(--tw-bg-opacity, 1));
@@ -1397,6 +1401,11 @@ Currently not working. Find fix and change translation to y axis */
 .hover\:bg-teal-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(45 212 191 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-pink-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 39 119 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-cyan-400:hover {
