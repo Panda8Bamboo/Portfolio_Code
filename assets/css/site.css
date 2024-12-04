@@ -646,6 +646,10 @@ video {
   margin-top: 5vh;
 }
 
+.mr-\[3vw\] {
+  margin-right: 3vw;
+}
+
 .block {
   display: block;
 }
@@ -694,6 +698,10 @@ video {
   height: 30vh;
 }
 
+.h-\[4vh\] {
+  height: 4vh;
+}
+
 .h-\[50px\] {
   height: 50px;
 }
@@ -730,8 +738,20 @@ video {
   height: 100vh;
 }
 
+.max-h-\[30px\] {
+  max-height: 30px;
+}
+
 .max-h-\[30vh\] {
   max-height: 30vh;
+}
+
+.max-h-\[40px\] {
+  max-height: 40px;
+}
+
+.max-h-\[37px\] {
+  max-height: 37px;
 }
 
 .min-h-\[10\%\] {
@@ -740,6 +760,10 @@ video {
 
 .min-h-\[100px\] {
   min-height: 100px;
+}
+
+.min-h-\[25px\] {
+  min-height: 25px;
 }
 
 .min-h-\[30\%\] {
@@ -1434,12 +1458,12 @@ Currently not working. Find fix and change translation to y axis */
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
+  .md\:mr-\[7vw\] {
+    margin-right: 7vw;
   }
 
-  .md\:flex {
-    display: flex;
+  .md\:block {
+    display: block;
   }
 
   .md\:hidden {
@@ -1465,9 +1489,19 @@ Currently not working. Find fix and change translation to y axis */
   .md\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .md\:items-center {
-    align-items: center;
+@media (min-width: 1024px) {
+  .lg\:mr-\[7vw\] {
+    margin-right: 7vw;
+  }
+
+  .lg\:mr-\[3vw\] {
+    margin-right: 3vw;
+  }
+
+  .lg\:block {
+    display: block;
   }
 }
 
