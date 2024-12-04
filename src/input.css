@@ -39,7 +39,7 @@ html, body {
 } */
 
 .grid-item {
-    @apply relative bg-cover bg-center text-center h-full w-full flex items-center justify-center;;
+    @apply relative bg-cover bg-center text-center h-full w-full flex items-center justify-center;
 }
 
 .background-image {
@@ -85,7 +85,7 @@ html, body {
 }
 
 .main {
-    @apply fixed bg-cyan-950 h-[65vh] md:h-[75vh] md:relative w-screen top-[25vh] left-0 right-0
+    @apply fixed bg-cyan-950 h-[65vh] md:h-[75vh] w-screen top-[25vh] left-0 right-0
 
 }
 
@@ -96,7 +96,7 @@ html, body {
 }
 
 .footer-large {
-    @apply relative w-full h-[10vh] px-4 top-[25vh];
+    @apply relative w-full h-[10vh] px-4 top-[100vh];
 }
 
 /* aside stuff

@@ -586,6 +586,10 @@ video {
   top: 0px;
 }
 
+.top-\[100vh\] {
+  top: 100vh;
+}
+
 .top-\[20vh\] {
   top: 20vh;
 }
@@ -600,10 +604,6 @@ video {
 
 .z-10 {
   z-index: 10;
-}
-
-.z-\[-1\] {
-  z-index: -1;
 }
 
 .ml-\[2vw\] {
@@ -1105,10 +1105,6 @@ video {
   opacity: 0;
 }
 
-.opacity-100 {
-  opacity: 1;
-}
-
 .opacity-50 {
   opacity: 0.5;
 }
@@ -1328,7 +1324,6 @@ html, body {
 
 @media (min-width: 768px) {
   .main {
-    position: relative;
     height: 75vh;
   }
 }
@@ -1351,7 +1346,7 @@ html, body {
 
 .footer-large {
   position: relative;
-  top: 25vh;
+  top: 100vh;
   height: 10vh;
   width: 100%;
   padding-left: 1rem;
@@ -1435,10 +1430,6 @@ Currently not working. Find fix and change translation to y axis */
 }
 
 @media (min-width: 768px) {
-  .md\:relative {
-    position: relative;
-  }
-
   .md\:block {
     display: block;
   }
