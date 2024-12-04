@@ -88,6 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.title === "Resume") {
         typeEffect("intro", "INTRODUCTION", 100);
     }
+    if (document.title === "Incomplete") {
+        typeEffect("typing", "COMING SOON...", 100);
+    }
+    if (document.title === "Loading") {
+        typeEffect("typing", "LOADING...", 150);
+    }
 
 
 
