@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function loadHeader() {
         try {
-            const headerResponse = await fetch('assets/html/header.html');
+            const headerResponse = await fetch('../assets/html/header.html');
             const headerData = await headerResponse.text();
             document.getElementById('header').innerHTML = headerData;
             document.dispatchEvent(new Event('headerLoaded')); // Correct event name
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     async function loadFooter() {
         try {
-            const footerResponse = await fetch('assets/html/footer.html');
+            const footerResponse = await fetch('../assets/html/footer.html');
             const footerContent = await footerResponse.text();
             document.getElementById('footer').innerHTML = footerContent;
 
@@ -71,8 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
     loadFooter();
 
 
-    const text = "INTRODUCTION";
-    const typingSpeed = 100;
     function typeEffect(elementId, text, speed) {
         const element = document.getElementById(elementId);
         let index = 0;
@@ -88,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (document.title === "Resume") {
-        typeEffect("intro", text, typingSpeed);
+        typeEffect("intro", "INTRODUCTION", 100);
     }
 
 
