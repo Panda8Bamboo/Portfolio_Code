@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/site.css">
-    <title> Portfolio </title>
+    <title> Resume </title>
 </head>
 <body>
 <header class="header">
     <div class="header-image" style="background-image: url('./assets/img/shen.jpg');"></div>
     <div class="header-content">
         <img src="assets/img/test.jpg" alt="Circular Image" class="header-image-circle">
+    </div>
+    <div class="header-text md:flex md:items-center">
+        <h1 id="flashing-text" class="md:hidden font-italic tracking-[5px] text-[clamp(8px, 3vw, 20px]">Amber Howe</h1>
     </div>
     <div class="header-text hidden md:block !w-[100%]">
         <div class="w-[100vw] flex flex-row w-full justify-between items-center">
@@ -38,7 +41,7 @@
 
 <main class="main flex flex-col h-full overflow-y-auto">
     <section class="bg-cerulean-950 min-h-[30%] flex-shrink-0 hover:bg-pink-500 transition-colors duration-300">
-        <h1 class="resume-grid-heading text tracking-[5px]">INTRODUCTION</h1>
+        <h1 id="header" class="resume-grid-heading text tracking-[5px]"></h1>
         <p class="flex items-start justify-center text-white text-[clamp(8px, 2vw, 15px)]">Hi! I'm Amber, a digital art enthusiast, gym rat and avid reader. </p>
         <p class="flex items-start justify-center text-white text-[clamp(8px, 2vw, 15px)]">I am open to all kinds of IT and digital design roles. Feel free to reach out with any questions! </p>
         <ul class="pt-[1vh] flex items-start justify-center text-white text-[clamp(8px, 2vw, 15px)]">

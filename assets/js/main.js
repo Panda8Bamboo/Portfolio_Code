@@ -1,5 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+
+    const text = "INTRODUCTION";
+    const typingSpeed = 100;
+    function typeEffect(elementId, text, speed) {
+        const element = document.getElementById(elementId);
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                element.textContent += text[index];
+                index++;
+                setTimeout(type, speed);
+            }
+        }
+        type();
+    }
+
+    if (document.title === "Resume") {
+        typeEffect("header", text, typingSpeed);
+    }
+
     /* Reveal the dashboard on dashboard icon click */
     const navigationAside = document.getElementById("navigationAside");
     const dashboardButton = document.getElementById("dashboardButton");
@@ -17,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     }
-
 
 
     /* Flash the tagline text in the header */

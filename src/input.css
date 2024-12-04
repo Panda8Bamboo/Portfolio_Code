@@ -89,6 +89,21 @@ html, body {
 
 }
 
+/* RESUME PAGE */
+#header::after {
+  content: "|";
+  display: inline-block;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
 /* footer stuff */
 
 .footer {
