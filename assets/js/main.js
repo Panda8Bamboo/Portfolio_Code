@@ -1,5 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* Preload assets */
+    const screenAssets = [
+        { href: "../img/shen.jpg", type: "image" },
+        { href: "../img/witch.jpg", type: "image" },
+        { href: "../img/tether.jpg", type: "image" },
+        { href: "../img/wizard.png", type: "image" },
+        { href: "../img/fanart.jpg", type: "image" },
+    ]
+    let combinedAssets = [...screenAssets];
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        const smallScreenAssets = [
+            { href: "../media/pixels.mp4", type: "video" },
+            { href: "../img/pixels.png", type: "image" },
+        ];
+        combinedAssets = combinedAssets.concat(smallScreenAssets);
+    }
+    combinedAssets.forEach(asset => {
+        const link = document.createElement("link");
+        link.rel = "preload";
+        link.href = asset.href;
+        link.as = asset.type;
+        document.head.appendChild(link);
+    });
+
     /* Flash the tagline text in the header */
     document.addEventListener('headerLoaded', () => {
         const phrases = ["Amber Howe", "Digital Artist", "Web Developer", "Programmer"];
