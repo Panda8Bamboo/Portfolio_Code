@@ -566,8 +566,16 @@ video {
   position: relative;
 }
 
+.\!top-0 {
+  top: 0px !important;
+}
+
 .bottom-0 {
   bottom: 0px;
+}
+
+.bottom-\[10vh\] {
+  bottom: 10vh;
 }
 
 .left-0 {
@@ -604,6 +612,14 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-\[-1\] {
+  z-index: -1;
+}
+
+.mb-\[0\.2vh\] {
+  margin-bottom: 0.2vh;
 }
 
 .ml-\[2vw\] {
@@ -646,10 +662,6 @@ video {
   margin-top: 5vh;
 }
 
-.mr-\[3vw\] {
-  margin-right: 3vw;
-}
-
 .block {
   display: block;
 }
@@ -664,6 +676,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.\!h-\[100vh\] {
+  height: 100vh !important;
 }
 
 .\!h-\[75vh\] {
@@ -686,12 +702,12 @@ video {
   height: 20px;
 }
 
-.h-\[25vh\] {
-  height: 25vh;
+.h-\[20vh\] {
+  height: 20vh;
 }
 
-.h-\[27px\] {
-  height: 27px;
+.h-\[25vh\] {
+  height: 25vh;
 }
 
 .h-\[30vh\] {
@@ -738,16 +754,8 @@ video {
   height: 100vh;
 }
 
-.max-h-\[30px\] {
-  max-height: 30px;
-}
-
 .max-h-\[30vh\] {
   max-height: 30vh;
-}
-
-.max-h-\[40px\] {
-  max-height: 40px;
 }
 
 .max-h-\[37px\] {
@@ -812,10 +820,6 @@ video {
 
 .w-\[25vw\] {
   width: 25vw;
-}
-
-.w-\[27px\] {
-  width: 27px;
 }
 
 .w-\[30vw\] {
@@ -938,6 +942,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-\[1\.9vh\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.9vh * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.9vh * var(--tw-space-y-reverse));
 }
 
 .space-y-\[1vh\] > :not([hidden]) ~ :not([hidden]) {
@@ -1129,6 +1139,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.\!opacity-\[100\%\] {
+  opacity: 100% !important;
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
@@ -1139,6 +1153,10 @@ video {
 
 .opacity-80 {
   opacity: 0.8;
+}
+
+.opacity-\[50\%\] {
+  opacity: 50%;
 }
 
 .shadow-lg {
@@ -1261,12 +1279,12 @@ html, body {
 
 .background-image {
   position: absolute;
+  z-index: -1;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.5;
-  z-index: -1;
+  opacity: 50%;
 }
 
 .grid-text {
@@ -1492,16 +1510,8 @@ Currently not working. Find fix and change translation to y axis */
 }
 
 @media (min-width: 1024px) {
-  .lg\:mr-\[7vw\] {
-    margin-right: 7vw;
-  }
-
   .lg\:mr-\[3vw\] {
     margin-right: 3vw;
-  }
-
-  .lg\:block {
-    display: block;
   }
 }
 

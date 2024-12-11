@@ -43,9 +43,7 @@ html, body {
 }
 
 .background-image {
-    @apply absolute w-[100%] h-[100%] object-cover;
-    opacity: 0.5;
-    z-index: -1;
+    @apply absolute w-[100%] h-[100%] object-cover opacity-[50%] z-[-1];
 }
 
 .grid-text {
