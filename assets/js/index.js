@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     /* Preload assets */
     const screenAssets = [
         { href: "./assets/img/shen.jpg", type: "image" },
-        { href: "./assets/witch.jpg", type: "image" },
-        { href: "./assets/tether.jpg", type: "image" },
+        { href: "./assets/img/witch.jpg", type: "image" },
+        { href: "./assets/img/tether.jpg", type: "image" },
         { href: "./assets/img/wizard.png", type: "image" },
         { href: "./assets/img/fanart.jpg", type: "image" },
     ]
