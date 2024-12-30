@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.title !== "Index") {
         loadHeader();
     }
+    if (document.title === "Index") {
+        updateText();
+        setInterval(updateText, 3000);
+    }
     loadFooter();
     if (document.title === "Resume") {
         typeEffect("intro", "INTRODUCTION", 100);
@@ -16,32 +20,40 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* Flash the tagline text in the header */
-document.addEventListener('headerLoaded', () => {
-    const phrases = ["Amber Howe", "Digital Artist", "Web Developer", "Programmer"];
+const phrases = ["Amber Howe", "Digital Artist", "Web Developer", "Programmer"];
+let index = 0;
+
+function updateText() {
     const textElement = document.getElementById("flashing-text");
     if (!textElement) {
         console.error("Element with ID 'flashing-text' not found!");
-        return;
     }
+    // Fade out
+    textElement.classList.remove("opacity-100");
+    textElement.classList.add("opacity-0");
 
-    let index = 0;
+    setTimeout(() => {
+        textElement.textContent = phrases[index];
+        index = (index + 1) % phrases.length;
 
-    function updateText() {
-        // Fade out
-        textElement.classList.remove("opacity-100");
-        textElement.classList.add("opacity-0");
+        // Fade in
+        textElement.classList.remove("opacity-0");
+        textElement.classList.add("opacity-100");
+    }, 500); // Adjust timeout to match the duration of the fade-out
+}
 
-        setTimeout(() => {
-            textElement.textContent = phrases[index];
-            index = (index + 1) % phrases.length;
-
-            textElement.classList.remove("opacity-0");
-            textElement.classList.add("opacity-100");
-        }, 500);
+// Trigger the text update once the header is loaded
+document.addEventListener('headerLoaded', () => {
+    const textElement = document.getElementById("flashing-text");
+    if (!textElement) {
+        console.error("Element with ID 'flashing-text' not found!");
     }
-
+    updateText();
     setInterval(updateText, 3000);
 });
+
+
+
 
 async function loadHeader() {
     try {
